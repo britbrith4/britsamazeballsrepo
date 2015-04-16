@@ -1,0 +1,6 @@
+<h1>Gladiators CAN FIGHT!</h1>
+<% @gladiators.each do |gladiator| %>
+  <div>
+    <%= link_to gladiator.name,  gladiator_path(gladiator) %> - <%= gladiator.arena.name %>
+<% end %>
+  </div>

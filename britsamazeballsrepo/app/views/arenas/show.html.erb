@@ -1,0 +1,7 @@
+<h1><%= @arena.name %></h1>
+<% @arena.gladiators.each do |gladiator| %>
+<div class="gladiator">
+  <h2><%= gladiator.name %></h2>
+  <%=image_tag gladiator.img_url %>
+</div>
+<% end %>

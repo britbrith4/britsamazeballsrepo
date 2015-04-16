@@ -1,0 +1,8 @@
+<h1>The Arenas</h1>
+
+<% @arenas.each do |arena| %>
+  <div class='arena'>
+    <h2><%=link_to arena.name, arena_path(arena)%></h2>
+
+  </div>
+<% end %>
